@@ -74,6 +74,66 @@ const myFunction = function(){
 
 console.log(typeof myFunction);
 
+//  Stack and Heap memory in javascript
+//Stack store the value of all Primitive Data type 
+
+let cityName = "Delhi";
+let newCityName = cityName;
+newCityName = "New Delhi";
+console.log(newCityName);  // THis Data store in the Stack and geting a copy 
+
+//This Data Store in Heap Memory 
+let objOne = {
+    Email : "neeraj@google.com",
+    Name: "Neeraj Kumar",
+    Age : 18
+}
+
+console.log(objOne.Name); // Intreact with actual value
+
+//Strings Method in Javascript 
+
+const adminName = "Neeraj";
+const repoCount = 50;
+
+//console.log(adminName +' '+  repoCount); //This is old  
+
+// I recommended 
+//Use of BackTick Like this `` Under this string InterPolution 
+
+console.log(`Hellow My Name Is ${adminName} and my repo count is ${repoCount}`);
+
+const gameName = new String("Neeraj kumar");
+console.log(gameName[0]);
+console.log(gameName.toUpperCase());  // THis Intreact with heap Memory Not change actual value 
+console.log(gameName.charAt(2));  //Returns the character at the specified index
+console.log(gameName.indexOf('j'));  //Returns the index of string
+
+const newGameName  = gameName.substring(0, 3); // accept string start point and end point;
+console.log(newGameName);
+
+
+const anotherString = gameName.slice(-6,3);
+console.log(anotherString);
+
+
+const strTrim = "   NeerajKumar  ";
+console.log(strTrim.trim()); // 'NeerajKumar' 
+
+const url = "https://github.com/admin07041999/%20Nk-Practice-Javascript";
+
+console.log(url.replace('%20',''));
+console.log(url.includes('%20',''));  // Return Boolean value
+
+
+const spliString = "My Name is Neeraj kumar";
+const words = spliString.split(' ');
+console.log(words[3]);
+
+
+
+
+
 
 
 
