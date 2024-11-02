@@ -131,6 +131,24 @@ const words = spliString.split(' ');
 console.log(words[3]);
 
 
+// Date and time in depth in javascript 
+
+let myDate = new Date();
+console.log(myDate.toString());  //(India Standard Time)
+console.log(myDate.toDateString());
+console.log(myDate.toLocaleDateString());
+console.log(typeof myDate); // return type 
+
+
+let myCreatedDate = new Date(2024,0,22);
+console.log(myCreatedDate.getTime()); // return number 
+
+console.log(Math.floor(Date.now()/1000)); // return milisecond
+
+let getNewDate = new Date();
+console.log(getNewDate.getMonth() + 1); // Get Month only But month start from 0 alwayse 
+
+console.log(getNewDate.getDate()); 
 
 
 
